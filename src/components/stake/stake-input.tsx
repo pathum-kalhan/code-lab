@@ -26,7 +26,6 @@ export default function StakeInput(props) {
   const handleBlur = (e) => {
     if (stayFocused && focusedFieldName === fieldName) {
       e.preventDefault();
-
       inputRef.current?.focus();
     }
   };
