@@ -7,10 +7,19 @@ import { StakeProvider } from "./context/Stake";
 // import StakeSelection from "./components/stake/StakeSelection.tsx";
 import { Grid } from "@mui/material";
 import StakeSelection from "./components/stake/StakeSelection.tsx";
+const terms = `
+We have terms
+1. one
+2. two
+3. three
+`;
+
+console.log(terms);
 function App() {
   return (
     <div className="p-12">
-      <StakeSelection />
+      {/* <StakeSelection /> */}
+      <p style={{ whiteSpace: "pre-wrap" }}>{terms}</p>
     </div>
   );
 }
